@@ -1,0 +1,153 @@
+<?php
+include("inc/footer.php");
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/footstyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+<style type="text/css">
+  h1{
+    font-style: normal;
+font-weight: inherit;
+font-family: times new roman;
+color: darkred;
+  }
+  a:hover{
+    background-color: rgba(0, 122, 153,0.7);
+  }
+</style>
+
+</style>
+</head>
+<body style="background-image: url(img/back1.jpg);background-size: cover;">
+
+<div class="navbar1">
+    <label style="font-family: url('https://fonts.googleapis.com/css?family=Fjalla+One'); font-size: 25px; font-stretch: condensed; font-weight: bold; margin-left: 22px;">E-JOURNAL</label>
+    <a href="register.php" target="" style="margin-left: 925px;"><button class="navbtn-index">REGISTER</button></a>
+    <a href="log.php" target=""><button class="navbtn-index">LOGIN</button></a>
+ </div>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <center><img src="img/ai.jpg" class="border slide"></center>
+  <div class="text">DEEP LEARNING(AI)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <center><img src="img/15a.jpg" class="border slide"></center>
+  <div class="text">GENE SEQUENCING</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <center><img src="img/cry1.jpg" class="border slide"></center>
+  <div class="text">CRYPTOGRAPHY AND DATA SECURITY</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<div class="linky" style="margin:5px;padding-left: 10px;">
+  <label style="font-family: verdana; color: white; font-size: 40px; font-stretch: ">What We Do?</label>
+  <p style="color:white">We offer an easy-to-use online journal publishing and management platform that is designed for improved editorial management of scholarly journals. It also enables better accessibility to content. Our Online Journal Management System drastically reduces the broadcasting duration of research papers by managing the publishing cycle end-to-end. We offer an open source solution to managing and publishing scholarly journals online.</p>
+  <br>
+  <a href="research_fields.html" style="margin-left: 200px;font-family: verdana;color: rgba(0,0,0,0.8);">Field Of Research</a>
+    <a href="Reviews.html" style="margin-left: 200px;font-family: verdana;color: rgba(0,0,0,0.8);">Reviews</a>
+    <a href="methods.html" style="margin-left: 200px;font-family: verdana;color: rgba(0,0,0,0.8);">Methods</a> 
+  
+  
+</div>
+
+<div class="footer">
+      <div class="column">
+        <address>
+          <p>Don't be shy- drop us a line.<br>
+          We are looking forward to speaking to you!</p>
+          <a href="mailto:hello@ejournal.com">hello@ejournal.com</a>
+          <p>Contact Us:<br>------------</p>  
+        </address>  
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
+
+      <div class="column">
+        <ul>
+          <li>Research
+          <ul>
+            <li><a href="recent_upload.html">Research Centers A-Z</a></li>
+            <li><a href="recent_upload.html">Libraries</a></li>
+          </ul>
+        </li>
+
+        <li>Departments
+          <ul>
+            <li><a href="research_fields.html">Departments A-Z</a></li>
+            <li><a href="research_fields.html">Interdisciplinary Programs</a></li>
+          </ul>
+        </li> 
+        </ul> 
+      </div>
+
+      <div class="column-img">
+          <figure class="poof"><div class="stag"><img src="https://bluestag.co.uk/templates/blue_stag/img/footer/seb.gif" style="height: 300%;width: 300%;"></div></figure>
+
+      </div>
+
+      <div class="row">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="t&c_index.html">Terms of use</a>&nbsp;&nbsp;&nbsp;
+        <a href="pp_index.html">Privacy Policy</a>&nbsp;&nbsp;&nbsp;
+        <a href="t&c_index.html">Copyright Policy</a>
+        <p></p>
+      </div>
+
+
+
+      
+    </div>
+
+
+
+<script>
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html> 
+
+</body>
+</html>
